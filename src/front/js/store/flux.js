@@ -10,7 +10,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		register: async (formData) => {
 		  try {
 			const response = await fetch(
-			  "https://studious-eureka-jj5w65w7459rhpvw9-3001.app.github.dev/api/register",
+			  "https://stunning-space-fortnight-v4499gqprp73jr7-3001.app.github.dev/api/register",
 			  {
 				method: "POST",
 				body: JSON.stringify(formData),
@@ -28,7 +28,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		login: async (loginForm) => {
 		  try {
 			const response = await fetch(
-			  "https://studious-eureka-jj5w65w7459rhpvw9-3001.app.github.dev/api/login",
+			  "https://stunning-space-fortnight-v4499gqprp73jr7-3001.app.github.dev/api/login",
 			  {
 				method: "POST",
 				body: JSON.stringify(loginForm),
@@ -57,7 +57,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		  }
 		  try {
 			const response = await fetch(
-			  "https://studious-eureka-jj5w65w7459rhpvw9-3001.app.github.dev/api/users",
+			  "https://stunning-space-fortnight-v4499gqprp73jr7-3001.app.github.dev/api/users",
 			  {
 				headers: {
 				  Authorization: `Bearer ${token}`,

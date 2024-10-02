@@ -19,7 +19,7 @@ export const Navbar = () => {
   }, [isAuthenticated, location.pathname, navigate]);
 
   return (
-    <nav className="navbar navbar-light bg-light py-3">
+    <nav className="navbar bg-dark border-bottom border-body py-3">
       <div className="container">
         <Link to="/">
           <span className="navbar-brand mb-0 h1 fw-bold">Home</span>

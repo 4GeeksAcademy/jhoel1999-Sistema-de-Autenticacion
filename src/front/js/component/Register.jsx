@@ -50,7 +50,7 @@ function Register() {
           </div>
         )}
 
-        <h3 className="card-title text-center fw-bold">Registration Form</h3>
+        <h3 className="card-title text-center fw-bold">Sign Up</h3>
         <form onSubmit={sendFormData}>
           <div className="mb-3">
             <label htmlFor="firstName" className="form-label">
@@ -107,9 +107,9 @@ function Register() {
           <div className="d-grid">
             <button
               type="submit"
-              className="btn btn-primary text-uppercase rounded-pill"
+              className="btn btn-success text-uppercase rounded-pill"
             >
-              Register
+              Create Account
             </button>
           </div>
         </form>

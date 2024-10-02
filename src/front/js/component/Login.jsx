@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext.js";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
   const { actions } = useContext(Context);
@@ -68,13 +68,17 @@ function Login() {
             onChange={handleChange}
           />
         </div>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex flex-column align-items-center">
           <button
             type="submit"
-            className="custom-btn w-100 text-uppercase rounded-pill"
+            className="btn btn-primary w-100 text-uppercase rounded-pill mb-2"
           >
-            Login
+            Log In
           </button>
+          <span className="text-muted mb-2">or</span>
+          <Link to="/" className="btn btn-success w-50 text-uppercase rounded-pill">
+            Create New Account
+          </Link>
         </div>
       </form>
     </div>
